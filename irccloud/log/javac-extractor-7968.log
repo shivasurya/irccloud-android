@@ -1,0 +1,10 @@
+[2021-02-14 04:28:38] [javac-extractor-7968] [WARN] Appending source destination directory G:\nodejs\android-security\repo\android-websockets\build\generated\ap_generated_sources\release\out to sourcepath
+[2021-02-14 04:28:38] [javac-extractor-7968] Starting extraction for:
+                                             sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@G:\nodejs\android-security\repo\android-RELEASE_4.2\irccloud\log\ext\javac-8.args
+                                             user.dir=G:\nodejs\android-security\repo\android-RELEASE_4.2
+[2021-02-14 04:28:39] [javac-extractor-7968] Processing file G:\nodejs\android-security\repo\android-websockets\build\generated\source\buildConfig\release\com\codebutler\android_websockets\BuildConfig.java
+[2021-02-14 04:28:39] [javac-extractor-7968] Javac init time: 0.9s
+[2021-02-14 04:28:39] [javac-extractor-7968] Javac attr time: 0.2s
+[2021-02-14 04:28:39] [javac-extractor-7968] Extractor time: 0.1s
+[2021-02-14 04:28:39] [javac-extractor-7968] Other time: 0.2s
+[2021-02-14 04:28:39] [javac-extractor-7968] Total time: 1.5s

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 IRCCloud, Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/contentBackgroundColor"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/globalMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/globalmessageview"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.irccloud.android.ListViewHax
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:cacheColorHint="?contentBackgroundColor"
+            android:dividerHeight="0dp"
+            android:transcriptMode="normal"
+            android:fadingEdge="none"
+            android:stackFromBottom="true"/>
+
+        <com.irccloud.android.OffsetLinearLayout
+            android:id="@+id/avatarContainer"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.irccloud.android.OffsetLinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unreadTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/chatterBarColor"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:baselineAligned="false"
+            android:visibility="gone" >
+
+            <TextView
+                android:text="↑"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:minHeight="24dp"
+                android:textColor="?attr/chatterBarTextColor"
+                android:textSize="@dimen/unread_top_txt_size" />
+
+            <TextView
+                android:id="@+id/highlightsTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/highlights_bg"
+                android:gravity="center"
+                android:minHeight="@dimen/unread_bubble_size"
+                android:minWidth="@dimen/unread_bubble_size"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/unread_top_txt_size"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:id="@+id/unreadTopText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:minHeight="24dp"
+                android:textColor="?attr/chatterBarTextColor"
+                android:textSize="@dimen/unread_top_txt_size"
+                />
+
+            <Button
+                android:id="@+id/markAsRead"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dismiss"
+                android:textColor="#fff"
+                android:background="@drawable/dismiss_bg"
+                android:minHeight="32dp"
+                android:padding="4dp"
+                android:layout_weight="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unreadBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/chatterBarColor"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:baselineAligned="false"
+            android:visibility="gone" >
+
+            <TextView
+                android:text="↓"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="24dp"
+                android:textColor="?attr/chatterBarTextColor"
+                android:textSize="@dimen/unread_bottom_txt_size"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:id="@+id/highlightsBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/highlights_bg"
+                android:gravity="center"
+                android:minHeight="@dimen/unread_bubble_size"
+                android:minWidth="@dimen/unread_bubble_size"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/unread_bottom_txt_size"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="24dp"
+                android:textColor="?attr/chatterBarTextColor"
+                android:textSize="@dimen/unread_bottom_txt_size"
+                />
+
+        </LinearLayout>
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/suggestionsContainer"
+            android:layout_margin="2dp"
+            android:visibility="invisible"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?bufferBorderColor"
+                android:padding="2dp">
+
+                <GridView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/suggestions"
+                    android:background="?bufferBackgroundColor"
+                    android:numColumns="auto_fit"
+                    android:columnWidth="160dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/colorPickerFragmet"
+            android:name="com.irccloud.android.fragment.IRCColorPickerFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/away"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/awayBarColor"
+        android:padding="6dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/awayTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:accessibilityLiveRegion="polite"
+            android:textColor="?attr/awayBarTextColor"
+            android:ellipsize="middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0"
+            android:gravity="right"
+            android:lines="1"
+            android:text="Tap to come back"
+            android:textColor="?attr/awayBarTextColor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_weight="0"
+        android:background="?attr/connectionBarColor"
+        android:padding="6dp"
+        android:textColor="?attr/connectionBarTextColor"
+        android:textSize="16sp"
+        android:accessibilityLiveRegion="polite"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="?attr/contentBorderColorBottom"/>
+</LinearLayout>

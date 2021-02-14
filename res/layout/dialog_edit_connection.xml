@@ -1,0 +1,222 @@
+<!--
+  ~ Copyright (c) 2015 IRCCloud, Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout android:id="@+id/unverified"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?networkErrorBackgroundColor"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:padding="6dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?networkErrorColor"
+                android:text="Confirm Your Email"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?networkErrorColor"
+                android:text="You can&apos;t connect to external servers until you confirm your email address."
+                android:gravity="center"
+                android:layout_marginBottom="6dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend Confirmation Email"
+                android:id="@+id/resend"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Server Settings"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/presets"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/network"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Network"
+            android:theme="?editTextTheme"
+            android:lines="1"
+            android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <include layout="@layout/dialog_edit_connection_hostname"  android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Your Identity"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:importantForAutofill="no"
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:hint="Nickname"
+                android:theme="?editTextTheme"
+                android:lines="1"
+                android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:importantForAutofill="no"
+                android:id="@+id/realname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Real Name"
+                android:theme="?editTextTheme"
+                android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/channels_wrapper"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channels To Join"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:importantForAutofill="no"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:id="@+id/channels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#testchannel password, #feedback"
+                android:theme="?editTextTheme"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Advanced Options"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:importantForAutofill="no"
+            android:id="@+id/nickservpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:hint="NickServ password"
+            android:theme="?editTextTheme"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:importantForAutofill="no"
+            android:id="@+id/serverpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:hint="Server password"
+            android:theme="?editTextTheme"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:importantForAutofill="no"
+            android:id="@+id/commands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:theme="?editTextTheme"
+            android:hint="Commands to run on connect"
+            android:inputType="textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</ScrollView>

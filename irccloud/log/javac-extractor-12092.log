@@ -1,0 +1,29 @@
+[2021-02-14 04:28:48] [javac-extractor-12092] [WARN] Appending source destination directory G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out to sourcepath
+[2021-02-14 04:28:48] [javac-extractor-12092] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@G:\nodejs\android-security\repo\android-RELEASE_4.2\irccloud\log\ext\javac-9.args
+                                              user.dir=G:\nodejs\android-security\repo\android-RELEASE_4.2
+[2021-02-14 04:28:54] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowUserBinding.java
+[2021-02-14 04:28:54] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowBufferBinding.java
+[2021-02-14 04:28:56] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowAcceptlistBinding.java
+[2021-02-14 04:28:56] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowChannelBinding.java
+[2021-02-14 04:28:56] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowChannelmodeBinding.java
+[2021-02-14 04:28:56] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowHostmaskBinding.java
+[2021-02-14 04:28:56] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowWhoBinding.java
+[2021-02-14 04:28:56] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowWhowasBinding.java
+[2021-02-14 04:28:57] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\source\buildConfig\release\com\irccloud\android\BuildConfig.java
+[2021-02-14 04:28:57] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_trigger\release\com\irccloud\android\DataBindingTriggerClass.java
+[2021-02-14 04:28:57] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowExportBinding.java
+[2021-02-14 04:28:57] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\data_binding_base_class_source_out\release\out\com\irccloud\android\databinding\RowPastebinBinding.java
+[2021-02-14 04:28:57] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\data\model\RecentConversation_Table.java
+[2021-02-14 04:28:58] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\BR.java
+[2021-02-14 04:28:58] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\data\model\BackgroundTask_Table.java
+[2021-02-14 04:28:59] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\data\model\LogExport_Table.java
+[2021-02-14 04:28:59] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\data\model\Notification_Table.java
+[2021-02-14 04:29:00] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\data\model\Notification_LastSeenEID_Table.java
+[2021-02-14 04:29:00] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\com\irccloud\android\data\model\Notification_ServerNick_Table.java
+[2021-02-14 04:29:00] [javac-extractor-12092] Processing file G:\nodejs\android-security\repo\android-RELEASE_4.2\build\generated\ap_generated_sources\release\out\android\databinding\DataBindingComponent.java
+[2021-02-14 04:29:00] [javac-extractor-12092] Javac init time: 3.9s
+[2021-02-14 04:29:00] [javac-extractor-12092] Javac attr time: 1.9s
+[2021-02-14 04:29:00] [javac-extractor-12092] Extractor time: 6.2s
+[2021-02-14 04:29:00] [javac-extractor-12092] Other time: 0.7s
+[2021-02-14 04:29:00] [javac-extractor-12092] Total time: 12.7s

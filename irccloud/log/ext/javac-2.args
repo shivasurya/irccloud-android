@@ -1,0 +1,31 @@
+-Xprefer:source
+-classpath
+G:\nodejs\android-security\repo\android-RELEASE_4.2\\gradle\wrapper\gradle-wrapper.jar;C:\Users\sshiv\Downloads\codeql-win64 (1)\codeql\java\tools/codeql-java-agent.jar
+-extdirs
+E:\Android\jre\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+-endorseddirs
+E:\Android\jre\jre\lib\endorsed
+-bootclasspath
+E:\Android\jre\jre\lib\resources.jar;E:\Android\jre\jre\lib\rt.jar;E:\Android\jre\jre\lib\sunrsasign.jar;E:\Android\jre\jre\lib\jsse.jar;E:\Android\jre\jre\lib\jce.jar;E:\Android\jre\jre\lib\charsets.jar;E:\Android\jre\jre\lib\jfr.jar;E:\Android\jre\jre\classes;C:\Users\sshiv\Downloads\codeql-win64 (1)\codeql\java\tools/codeql-java-agent.jar
+-source
+1.7
+-target
+1.7
+-d
+G:\nodejs\android-security\repo\android-websockets\build\intermediates\javac\debugTest\classes
+-encoding
+UTF-8
+-bootclasspath
+E:\Programs\Android\Sdk\platforms\android-26\android.jar;E:\Programs\Android\Sdk\platforms\android-26\optional\org.apache.http.legacy.jar
+-g
+-sourcepath
+
+-proc:none
+-s
+G:\nodejs\android-security\repo\android-websockets\build\generated\ap_generated_sources\debugTest\out
+-XDuseUnsharedTable=true
+-classpath
+G:\nodejs\android-security\repo\android-websockets\build\intermediates\compile_r_class_jar\debugTest\R.jar
+G:\nodejs\android-security\repo\android-websockets\src\main\java\com\codebutler\android_websockets\HybiParser.java
+G:\nodejs\android-security\repo\android-websockets\src\main\java\com\codebutler\android_websockets\WebSocketClient.java
+G:\nodejs\android-security\repo\android-websockets\build\generated\source\buildConfig\debugTest\com\codebutler\android_websockets\BuildConfig.java

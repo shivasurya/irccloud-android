@@ -1,0 +1,32 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+tests/bin/
+tests/gen/
+out/
+build/
+
+# Local configuration file (sdk path, etc)
+*.properties
+irccloud.keystore
+*-res/
+build-*.*
+branded.gradle
+
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/libraries
+.gradle/
+res/values/com_crashlytics_export_strings.xml
+assets/crashlytics-build.properties
+infer-out/

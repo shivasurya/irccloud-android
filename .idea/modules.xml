@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-RELEASE_4.2.iml" filepath="$PROJECT_DIR$/.idea/modules/android-RELEASE_4.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/27180190/android-RELEASE_4.2.android-websockets.iml" filepath="$PROJECT_DIR$/.idea/modules/27180190/android-RELEASE_4.2.android-websockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../android-websockets/android-websockets.iml" filepath="$PROJECT_DIR$/../android-websockets/android-websockets.iml" />
+    </modules>
+  </component>
+</project>

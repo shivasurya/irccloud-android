@@ -1,0 +1,2 @@
+[2021-02-14 04:24:57] [javac-extractor-9772] [ERROR] Completion failure for member updateLiveDataRegistration(int,android.arch.lifecycle.LiveData<?>) of type android.databinding.ViewDataBinding
+                                                     javac_extend.com.sun.tools.javac.code.Symbol$CompletionFailure: class file for android.arch.lifecycle.LiveData not found
